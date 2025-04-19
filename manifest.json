@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Suspender",
+  "version": "1.0",
+  "description": "Suspends tabs inactive for over 60 minutes",
+  "permissions": [
+    "tabs",
+    "storage",
+    "alarms",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_title": "Tab Suspender",
+    "default_popup": "popup.html"
+  }
+}

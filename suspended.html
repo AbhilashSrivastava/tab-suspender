@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tab Suspended</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f1117;
+      color: #e0e0e0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+    }
+    .container {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    h1 {
+      color: #ff7043;
+    }
+    p {
+      font-size: 1rem;
+      margin: 10px 0;
+      width: 500px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-break: anywhere;
+    }
+    button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      background-color: #ff7043;
+      border: none;
+      border-radius: 5px;
+      color: black;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all ease-in-out 0.1s;
+    }
+    button:hover {
+      background-color: #ff5722;
+      color: white;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      color: #aaa;
+      border-top: 1px solid #333;
+      background: #ff704359;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    #title, #title-label{
+      padding: 17px 0;
+    }
+    #content-wrapper{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height: 400px;
+      justify-content: center;
+    }
+    #url, #time{
+      color: #ffa50096;
+      font-style: italic;
+      text-decoration: wavy;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Tab Suspended</h1>
+    <div id="content-wrapper">
+      <p><strong>URL:</strong> <span id="url"></span></p>
+      <p><strong>Suspended at:</strong> <span id="time"></span></p>
+    </div>
+    <button id="reloadBtn">Reload Tab</button>
+  </div>
+  <footer>Made by - Abhilash Srivastava</footer>
+  <script src="suspended.js"></script>
+</body>
+</html>
